@@ -12,7 +12,11 @@ fun solution2(cryptogram: String): String {
             cryptogramList.removeAt(i)
             i -= 2
         }
-       i++
+        i++
     }
-    return cryptogramList.toString()
+    val result = StringBuilder()
+    for (j in 0 until cryptogramList.size) {
+        result.append(cryptogramList[j])
+    }
+    return result.toString()
 }
