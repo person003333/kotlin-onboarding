@@ -21,3 +21,8 @@
 | --- | --- |
 | "browoanoommnaon" | "brown" |
 | "zyelleyz" | "" |
+
+### 기능 정의
+- cryptogram을 리스트에 저장
+- i번째 배열아이템과 i+1번째 배열아이템이 같으면 remove를 통해 삭제
+- 이 과정을 같은 배열 아이템이 없어질 때까지 반복
