@@ -1,22 +1,22 @@
 package onboarding
 
 fun solution2(cryptogram: String): String {
-    val cryptogramList = mutableListOf<Any>()
+    val cryptogramCharList = mutableListOf<Any>()
     var i = 0
     for (char in cryptogram) {
-        cryptogramList.add(char.toString())
+        cryptogramCharList.add(char.toString())
     }
-    while (i < cryptogramList.size - 1) {
-        if (cryptogramList[i] == cryptogramList[i + 1]) {
-            cryptogramList.removeAt(i)
-            cryptogramList.removeAt(i)
+    while (i < cryptogramCharList.size - 1) {
+        if (cryptogramCharList[i] == cryptogramCharList[i + 1]) {
+            cryptogramCharList.removeAt(i)
+            cryptogramCharList.removeAt(i)
             i -= 2
         }
         i++
     }
     val result = StringBuilder()
-    for (j in 0 until cryptogramList.size) {
-        result.append(cryptogramList[j])
+    for (j in 0 until cryptogramCharList.size) {
+        result.append(cryptogramCharList[j])
     }
     return result.toString()
 }
