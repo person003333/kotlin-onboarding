@@ -1,5 +1,11 @@
 package onboarding
 
 fun solution2(cryptogram: String): String {
-    TODO("프로그램 구현")
+    val cryptogramList = mutableListOf<Any>()
+    for (char in cryptogram) {
+        cryptogramList.add(char.toString())
+    }
+
+    return cryptogramList.toString()
 }
+
