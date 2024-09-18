@@ -19,3 +19,9 @@
 | word | result |
 | --- | --- |
 | "I love you" | "R olev blf" |
+
+### 기능 명세
+- 모든 알파벳을 list에 넣는다.
+- word를 split을 통해 mutableList에 넣는다.
+- 0-25번째의 배열을 25-i를 통하여 변환한다.
+- uppercase와 lowcase를 통해 대문자는 소문자로 소문자는 대문자로 변환한다.
