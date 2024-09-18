@@ -19,7 +19,12 @@ fun solution4(word: String): String {
             }
         }
     }
-   
+    val stringBuilder = StringBuilder()
+    var result = ""
+    for (i in 0 until wordList.size) {
+        result = stringBuilder.append(wordList[i]).toString()
+    }
+    return result
 }
 
 fun main() {
