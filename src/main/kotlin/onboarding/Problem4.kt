@@ -9,24 +9,22 @@ fun solution4(word: String): String {
     for (char in word) {
         wordList.add(char)
     }
-
+    for (i in wordList.indices) {
     for (j in alphabetList.indices) {
-        for (i in 0 until wordList.size) {
             if (wordList[i] == alphabetList[j]) {
                 wordList[i] = alphabetList[25 - j]
+                break
             } else if (wordList[i] == alphabetList[j].lowercaseChar()) {
                 wordList[i] = alphabetList[25 - j].lowercaseChar()
+                break
             }
         }
     }
     val stringBuilder = StringBuilder()
     var result = ""
-    for (i in 0 until wordList.size) {
+    for (i in wordList.indices) {
         result = stringBuilder.append(wordList[i]).toString()
     }
     return result
 }
 
-fun main() {
-    println(solution4("I love you"))
-}
